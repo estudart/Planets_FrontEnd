@@ -3,7 +3,10 @@ body {
 }
 
 .App {
+  height: 100vh;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -42,9 +45,9 @@ body {
 }
 
 .app-title {
-  color: yellow;
+  color: #ffd700;
   text-align: center;
-  text-shadow: 1.5px 1.5px 2px yellow;
+  text-shadow: 1.5px 1.5px 2px #ffd700;
 }
 
 .planet-container {
@@ -54,12 +57,33 @@ body {
 }
 
 .planet-container__img {
+  margin-top: 3%;
   height: 250px;
   width: auto;
 }
 
-.minicards-container {
+.minicards {
+  margin-top: auto;
   display: flex;
   justify-content: space-evenly;
   color: white;
+}
+
+.minicards-container {
+  background-color: black;
+  border: 2px solid #ffd700;
+  border-bottom: 0px;
+  border-radius: 5px 5px 0px 0px;
+  display: flex;
+  direction: column;
+}
+
+.minicards-container__title {
+  cursor: pointer;
+  margin: 0px;
+  padding: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: large;
+  color: #ffd700;
 }

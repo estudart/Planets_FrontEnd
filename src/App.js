@@ -25,7 +25,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="App">
       <h1 className="app-title">Solar System</h1>
       <PlanetCard planets={data} selected={selected} />
       <MiniCards planets={data} handleSelected={handleSelected} />
@@ -49,7 +49,6 @@ function PlanetCard({ planets, selected }) {
         src={planets.find((planet) => planet.planet_name === selected).image}
         alt="Planet URL"
       />
-      <div></div>
     </div>
   );
 }
@@ -59,11 +58,16 @@ function MiniCards({ planets, handleSelected }) {
     return <div>No planets available</div>;
   }
   return (
-    <div className="minicards-container">
+    <div className="minicards">
       {planets.map((planet) => (
-        <p onClick={() => handleSelected(planet.planet_name)}>
-          {planet.planet_name}
-        </p>
+        <div className="minicards-container">
+          <p
+            className="minicards-container__title"
+            onClick={() => handleSelected(planet.planet_name)}
+          >
+            {planet.planet_name}
+          </p>
+        </div>
       ))}
     </div>
   );
