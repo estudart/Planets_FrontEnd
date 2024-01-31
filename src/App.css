@@ -1,5 +1,8 @@
 body {
-  background-image: url("https://img.freepik.com/free-photo/starry-night-sky_1048-11828.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706659200&semt=ais");
+  background-image: url("https://i.pinimg.com/originals/13/7e/8c/137e8c8ee47a632fb20843fd293a4f61.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .App {
