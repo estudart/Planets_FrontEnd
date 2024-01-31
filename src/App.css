@@ -49,4 +49,17 @@ body {
 
 .planet-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planet-container__img {
+  height: 250px;
+  width: auto;
+}
+
+.minicards-container {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
 }

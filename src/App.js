@@ -3,23 +3,68 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 function App() {
-  useEffect(function () {
-    const planetsData = axios.get("http://127.0.0.1:5000/planets");
-    console.log(planetsData);
+  const [data, setData] = useState([]);
+  const [selected, setSelected] = useState("Neptune");
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const result = await axios.get("http://127.0.0.1:5000/planets");
+        const planetsData = result.data;
+        setData(planetsData);
+        console.log(planetsData);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
+    fetchData();
   }, []);
+
+  function handleSelected(select) {
+    setSelected(select);
+  }
+
   return (
     <div>
       <h1 className="app-title">Solar System</h1>
-      <PlanetCard />
+      <PlanetCard planets={data} selected={selected} />
+      <MiniCards planets={data} handleSelected={handleSelected} />
     </div>
   );
 }
 
-function PlanetCard() {
+function PlanetCard({ planets, selected }) {
+  if (!planets || planets.length === 0) {
+    return <div>No planets available</div>;
+  }
+
+  if (!planets[0] || !planets[0].image) {
+    return <div>no planets image</div>;
+  }
+
   return (
     <div className="planet-container">
-      <img alt="Planet URL" />
+      <img
+        className="planet-container__img"
+        src={planets.find((planet) => planet.planet_name === selected).image}
+        alt="Planet URL"
+      />
       <div></div>
+    </div>
+  );
+}
+
+function MiniCards({ planets, handleSelected }) {
+  if (!planets || planets.length === 0) {
+    return <div>No planets available</div>;
+  }
+  return (
+    <div className="minicards-container">
+      {planets.map((planet) => (
+        <p onClick={() => handleSelected(planet.planet_name)}>
+          {planet.planet_name}
+        </p>
+      ))}
     </div>
   );
 }
