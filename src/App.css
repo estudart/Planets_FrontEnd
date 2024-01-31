@@ -1,3 +1,7 @@
+body {
+  background-image: url("https://img.freepik.com/free-photo/starry-night-sky_1048-11828.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706659200&semt=ais");
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.app-title {
+  color: yellow;
+  text-align: center;
+  text-shadow: 1.5px 1.5px 2px yellow;
+}
+
+.planet-container {
+  display: flex;
 }

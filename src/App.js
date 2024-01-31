@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 function App() {
+  useEffect(function () {
+    const planetsData = axios.get("http://127.0.0.1:5000/planets");
+    console.log(planetsData);
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 className="app-title">Solar System</h1>
+      <PlanetCard />
+    </div>
+  );
+}
+
+function PlanetCard() {
+  return (
+    <div className="planet-container">
+      <img alt="Planet URL" />
+      <div></div>
     </div>
   );
 }
