@@ -48,6 +48,7 @@ body {
 }
 
 .app-title {
+  margin-bottom: 4%;
   color: #ffd700;
   text-align: center;
   text-shadow: 1.5px 1.5px 2px #ffd700;
@@ -67,7 +68,7 @@ body {
 
 .planet-container__info {
   margin-right: 4%;
-  color: #ffd700;
+  color: #ae00ff;
   background-color: black;
   border-radius: 5px;
   padding: 1%;
@@ -79,7 +80,7 @@ table {
 }
 
 td {
-  border: 1px solid #ffd700;
+  border: 1px solid #ae00ff;
   padding: 8px;
 }
 
@@ -87,10 +88,18 @@ td {
   text-align: left;
   padding-right: 10px;
   font-weight: bold;
+  background-color: rgb(44, 10, 66);
 }
 
 .value {
   text-align: center;
+}
+
+.full-width {
+  background-color: rgb(44, 10, 66);
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
 }
 
 .minicards {

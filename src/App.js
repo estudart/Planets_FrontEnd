@@ -82,7 +82,8 @@ function PlanetCard({ planets, selected }) {
             <tr>
               <td className="label">Mass:</td>
               <td className="value">
-                {planets.find((planet) => planet.planet_name === selected).mass}
+                {planets.find((planet) => planet.planet_name === selected).mass}{" "}
+                M Earth
               </td>
             </tr>
             <tr>
@@ -91,7 +92,8 @@ function PlanetCard({ planets, selected }) {
                 {
                   planets.find((planet) => planet.planet_name === selected)
                     .radius
-                }
+                }{" "}
+                Km
               </td>
             </tr>
             <tr>
@@ -100,7 +102,13 @@ function PlanetCard({ planets, selected }) {
                 {
                   planets.find((planet) => planet.planet_name === selected)
                     .distance
-                }
+                }{" "}
+                (AU)
+              </td>
+            </tr>
+            <tr>
+              <td className="full-width" colSpan="2">
+                Description
               </td>
             </tr>
           </tbody>
