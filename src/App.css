@@ -55,7 +55,7 @@ body {
 
 .planet-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -63,6 +63,34 @@ body {
   margin-top: 3%;
   height: 250px;
   width: auto;
+}
+
+.planet-container__info {
+  margin-right: 4%;
+  color: #ffd700;
+  background-color: black;
+  border-radius: 5px;
+  padding: 1%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid #ffd700;
+  padding: 8px;
+}
+
+.label {
+  text-align: left;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.value {
+  text-align: center;
 }
 
 .minicards {

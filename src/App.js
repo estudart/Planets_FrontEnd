@@ -49,6 +49,63 @@ function PlanetCard({ planets, selected }) {
         src={planets.find((planet) => planet.planet_name === selected).image}
         alt="Planet URL"
       />
+      <div className="planet-container__info">
+        <table>
+          <tbody>
+            <tr>
+              <td className="label">Name:</td>
+              <td className="value">
+                {
+                  planets.find((planet) => planet.planet_name === selected)
+                    .planet_name
+                }
+              </td>
+            </tr>
+            <tr>
+              <td className="label">Type:</td>
+              <td className="value">
+                {
+                  planets.find((planet) => planet.planet_name === selected)
+                    .planet_type
+                }
+              </td>
+            </tr>
+            <tr>
+              <td className="label">Home Star:</td>
+              <td className="value">
+                {
+                  planets.find((planet) => planet.planet_name === selected)
+                    .home_star
+                }
+              </td>
+            </tr>
+            <tr>
+              <td className="label">Mass:</td>
+              <td className="value">
+                {planets.find((planet) => planet.planet_name === selected).mass}
+              </td>
+            </tr>
+            <tr>
+              <td className="label">Radius:</td>
+              <td className="value">
+                {
+                  planets.find((planet) => planet.planet_name === selected)
+                    .radius
+                }
+              </td>
+            </tr>
+            <tr>
+              <td className="label">Distance:</td>
+              <td className="value">
+                {
+                  planets.find((planet) => planet.planet_name === selected)
+                    .distance
+                }
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
