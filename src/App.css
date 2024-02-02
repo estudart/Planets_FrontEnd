@@ -67,11 +67,15 @@ body {
 }
 
 .planet-container__info {
-  margin-right: 4%;
+  position: fixed;
+  top: 20vh;
+  right: 10vw;
+  width: 300px; /* Adjust the width as needed */
   color: #ae00ff;
   background-color: black;
   border-radius: 5px;
   padding: 1%;
+  overflow-y: auto; /* Add overflow-y to enable scrolling if content exceeds height */
 }
 
 table {
