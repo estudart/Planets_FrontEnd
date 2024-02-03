@@ -106,11 +106,13 @@ function PlanetCard({ planets, selected }) {
                 (AU)
               </td>
             </tr>
+            {/*
             <tr>
               <td className="full-width" colSpan="2">
                 Description
               </td>
             </tr>
+            */}
           </tbody>
         </table>
       </div>
