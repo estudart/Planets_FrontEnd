@@ -1,11 +1,12 @@
 body {
-  /*background-color: black;
+  background-color: black;
+  /*
   background-image: url("https://i.pinimg.com/originals/13/7e/8c/137e8c8ee47a632fb20843fd293a4f61.jpg");
-  */
   background-image: url("https://media1.tenor.com/m/dboyauVM3SwAAAAC/sky-night.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  */
 }
 
 .App {
@@ -64,17 +65,12 @@ body {
 }
 
 .planet-container__img {
-  border-radius: 50%;
-  margin-right: 30%;
   margin-top: 3%;
   height: 250px;
   width: auto;
 }
 
 .planet-container__info {
-  position: fixed;
-  top: 25vh;
-  right: 15vw;
   width: 300px; /* Adjust the width as needed */
   color: #ae00ff;
   background-color: #581379;
@@ -110,6 +106,10 @@ td {
   text-align: center;
   width: 100%;
   font-weight: bold;
+}
+
+.justify {
+  text-align: justify;
 }
 
 .minicards {

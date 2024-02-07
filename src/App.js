@@ -44,11 +44,31 @@ function PlanetCard({ planets, selected }) {
 
   return (
     <div className="planet-container">
+      <div className="planet-container__info">
+        <table>
+          <tbody>
+            <tr>
+              <td className="full-width" colSpan="2">
+                Description
+              </td>
+            </tr>
+            <tr>
+              <td className="full-width justify" colSpan="2">
+                {
+                  planets.find((planet) => planet.planet_name === selected)
+                    .description
+                }
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <img
         className="planet-container__img"
         src={planets.find((planet) => planet.planet_name === selected).image}
         alt="Planet URL"
       />
+
       <div className="planet-container__info">
         <table>
           <tbody>
