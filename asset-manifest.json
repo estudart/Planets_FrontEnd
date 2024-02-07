@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Planets_FrontEnd/static/css/main.0871a416.css",
+    "main.js": "/Planets_FrontEnd/static/js/main.141af0b5.js",
+    "static/js/787.edf2cb8b.chunk.js": "/Planets_FrontEnd/static/js/787.edf2cb8b.chunk.js",
+    "index.html": "/Planets_FrontEnd/index.html",
+    "main.0871a416.css.map": "/Planets_FrontEnd/static/css/main.0871a416.css.map",
+    "main.141af0b5.js.map": "/Planets_FrontEnd/static/js/main.141af0b5.js.map",
+    "787.edf2cb8b.chunk.js.map": "/Planets_FrontEnd/static/js/787.edf2cb8b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0871a416.css",
+    "static/js/main.141af0b5.js"
+  ]
+}
