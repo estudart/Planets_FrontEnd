@@ -4,12 +4,14 @@ import axios from "axios";
 
 function App() {
   const [data, setData] = useState([]);
-  const [selected, setSelected] = useState("Neptune");
+  const [selected, setSelected] = useState("Earth");
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const result = await axios.get("http://127.0.0.1:5000/planets");
+        const result = await axios.get(
+          "https://estudart.pythonanywhere.com/planets"
+        );
         const planetsData = result.data;
         setData(planetsData);
         console.log(planetsData);
