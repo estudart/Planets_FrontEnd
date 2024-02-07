@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Planets Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Solar System](https://github.com/estudart/Planets_FrontEnd/blob/main/solar_system.png)
 
-## Available Scripts
+## Description
+This project showcases the frontend of a Solar System application built using React. It allows users to explore information about different planets in our solar system.
 
-In the project directory, you can run:
+## Application Link
+Explore the application [here](https://estudart.github.io/Planets_FrontEnd/).
 
-### `npm start`
+## Repository Link
+Find the code for this project on [GitHub](https://github.com/estudart/Planets_FrontEnd).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
+To run this project locally, follow these steps:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/estudart/Planets_FrontEnd.git
+2. Install dependencies:
+   ```bash
+   npm install
+3. Start the application:
+   ```bash
+   npm start
+3. Access the application in your browser at http://localhost:3000
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Components
 
-### `npm test`
+### App Component
+The App component serves as the entry point for the application. It fetches data about planets from an external API and renders the main UI components.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### PlanetCard Component
+The PlanetCard component displays detailed information about the selected planet, including its name, type, home star, mass, radius, and distance from the home star.
 
-### `npm run build`
+### MiniCards Component
+The MiniCards component displays a list of mini cards for each planet. Clicking on a mini card updates the selected planet in the App component.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## API Endpoint
+The frontend application consumes data from the following API endpoint:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Endpoint**: [https://estudart.pythonanywhere.com/planets](https://estudart.pythonanywhere.com/planets)
+- **Method**: GET
+- **Description**: Retrieve a list of planets.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributors
+Érico C. Studart - Software Developer
