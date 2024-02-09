@@ -6,7 +6,7 @@
 This project showcases the frontend of a Solar System application built using React. It allows users to explore information about different planets in our solar system.
 
 ## Application Link
-Explore the application [here](https://estudart.github.io/Planets_FrontEnd/).
+Explore the application [here](https://estudart.github.io/planets-react-frontend/).
 
 ## Repository Link
 Find the code for this project on [GitHub](https://github.com/estudart/Planets_FrontEnd).
