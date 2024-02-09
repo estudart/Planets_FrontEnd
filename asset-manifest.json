@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Planets_FrontEnd/static/css/main.0871a416.css",
-    "main.js": "/Planets_FrontEnd/static/js/main.141af0b5.js",
-    "static/js/787.edf2cb8b.chunk.js": "/Planets_FrontEnd/static/js/787.edf2cb8b.chunk.js",
-    "index.html": "/Planets_FrontEnd/index.html",
-    "main.0871a416.css.map": "/Planets_FrontEnd/static/css/main.0871a416.css.map",
-    "main.141af0b5.js.map": "/Planets_FrontEnd/static/js/main.141af0b5.js.map",
-    "787.edf2cb8b.chunk.js.map": "/Planets_FrontEnd/static/js/787.edf2cb8b.chunk.js.map"
+    "main.css": "/planets-react-frontend/static/css/main.0871a416.css",
+    "main.js": "/planets-react-frontend/static/js/main.c729573f.js",
+    "static/js/787.edf2cb8b.chunk.js": "/planets-react-frontend/static/js/787.edf2cb8b.chunk.js",
+    "index.html": "/planets-react-frontend/index.html",
+    "main.0871a416.css.map": "/planets-react-frontend/static/css/main.0871a416.css.map",
+    "main.c729573f.js.map": "/planets-react-frontend/static/js/main.c729573f.js.map",
+    "787.edf2cb8b.chunk.js.map": "/planets-react-frontend/static/js/787.edf2cb8b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0871a416.css",
-    "static/js/main.141af0b5.js"
+    "static/js/main.c729573f.js"
   ]
 }
