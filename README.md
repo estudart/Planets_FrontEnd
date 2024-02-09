@@ -1,6 +1,6 @@
 # Planets Frontend
 
-![Solar System](https://github.com/estudart/Planets_FrontEnd/blob/main/solar_system.png)
+![Solar System](https://github.com/estudart/planets-react-frontend/blob/main/solar_system.png)
 
 ## Description
 This project showcases the frontend of a Solar System application built using React. It allows users to explore information about different planets in our solar system.
@@ -9,13 +9,13 @@ This project showcases the frontend of a Solar System application built using Re
 Explore the application [here](https://estudart.github.io/planets-react-frontend/).
 
 ## Repository Link
-Find the code for this project on [GitHub](https://github.com/estudart/Planets_FrontEnd).
+Find the code for this project on [GitHub](https://github.com/estudart/planets-react-frontend).
 
 ## Usage
 To run this project locally, follow these steps:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/estudart/Planets_FrontEnd.git
+   git clone https://github.com/estudart/planets-react-frontend.git
 2. Install dependencies:
    ```bash
    npm install
